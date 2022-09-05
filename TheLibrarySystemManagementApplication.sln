@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32319.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LSMWebApi", "LSMWebApi\LSMWebApi.csproj", "{6838DEDB-46FD-41BD-AFC0-F99DD37B47B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6838DEDB-46FD-41BD-AFC0-F99DD37B47B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6838DEDB-46FD-41BD-AFC0-F99DD37B47B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6838DEDB-46FD-41BD-AFC0-F99DD37B47B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6838DEDB-46FD-41BD-AFC0-F99DD37B47B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {539AC393-6F6E-412A-A285-F540A758A8C2}
+	EndGlobalSection
+EndGlobal
