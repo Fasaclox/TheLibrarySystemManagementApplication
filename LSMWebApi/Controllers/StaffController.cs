@@ -12,6 +12,7 @@ namespace LSMWebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     
     public class StaffController : ControllerBase
     {

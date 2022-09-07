@@ -12,18 +12,18 @@ namespace LSMWebApi.Controllers
    
     public class LSMAccountController : ControllerBase
     {
-        private readonly ILSMAccountRepository _iLSMAccountRepository;
+        private readonly ILSMAccountRepository _lSMAccountRepository;
 
-        public LSMAccountController(ILSMAccountRepository iLSMAccountRepository)
+        public LSMAccountController(ILSMAccountRepository lSMAccountRepository)
         {
-            _iLSMAccountRepository = iLSMAccountRepository;
+            _lSMAccountRepository = lSMAccountRepository;
         }
 
     
         [HttpPost("signup")]
          public async Task<IActionResult> SignUp([FromBody] SignUpModel signUpModel) 
         {
-            var result = await _iLSMAccountRepository.SignUpAsync(signUpModel);
+            var result = await _lSMAccountRepository.SignUpAsync(signUpModel);
 
             if (result.Succeeded)
             {
@@ -38,7 +38,7 @@ namespace LSMWebApi.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] SignInModel signInModel)
         {
-            var result = await _iLSMAccountRepository.LoginAsync(signInModel);
+            var result = await _lSMAccountRepository.LoginAsync(signInModel);
 
             if (string.IsNullOrEmpty(result))
             {

@@ -56,7 +56,7 @@ namespace LSMWebApi.Repository
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),    
 
             };
-            var authSigninKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(_configuration["JWT.Secret"]));
+            var authSigninKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(_configuration["JWT:Secret"]));
             var token = new JwtSecurityToken(
                 issuer: _configuration["JWT:ValidIssuer"],
                 audience: _configuration["JWT:ValidAudience"],
